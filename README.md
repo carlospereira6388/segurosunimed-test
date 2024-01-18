@@ -1,24 +1,24 @@
-# Custumer Service
+## Seguros Unimed - Avaliação para Desenvolvedores
+Bem-vindo ao repositório do Desafio Seguros Unimed. Este arquivo README fornece informações detalhadas sobre como configurar, executar e utilizar o projeto.
 
-### Requisitos
+## Pré-requisitos
+Antes de começar, assegure-se de que você tem os seguintes pré-requisitos instalados em sua máquina:
 
-1. JDK 11
-1. Maven 3
+* Java 11
+* Maven
+* Docker
 
-### Comandos Prova Prática
+## Iniciando o projeto
 
-1. Clone o projeto: `https://github.com/filipemaulerm/segurosunimed-test.git`
-2. Execute a aplicação.
-3. Acesse: `http://localhost:8080/customers`
-4. Neste ponto será retornado a lista de clientes pré-cadastrada.
-5. Faça filtros de cliente nas buscas por nome, email e genero.
-6. Adicione endpoints para criar um novo cliente, editar um cliente e excluir um cliente.
-7. Valide os dados antes de cadastrar ou editar.
-8. Pagine a listagem de clientes.
-9. Possibilite o cadastro de múltiplos endereços para um cliente.
-10. No cadastro de endereço permita inserir apenas o CEP carregando os dados via consumo do serviço: https://viacep.com.br/
-11. Faça filtros de clientes nas buscas agora para os campos cidade e estado
-12. Envie a url do seu repositório no github para análise.
+```bash
+mvn spring-boot:run
+```
 
-Obs.: Será um diferencial implementações como: tratamento de exceções (RestControllerAdvice), testes, validações, uso de mecanismos modernos da linguagem, frontend, autenticação e documentação. 
+Ou
 
+```bash
+docker-compose up --build
+```
+
+## Chamada das APIs
+Foi adicionado uma Collection do Postman para facilitar a utilização das APIs.
